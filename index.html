@@ -8,7 +8,141 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
   <style>
-    /* styles go here in Task 2 */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #e2ebdd;
+      color: #000;
+      min-height: 100vh;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 60px;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      background: #e2ebdd;
+      z-index: 100;
+    }
+    .nav-name {
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.2px;
+      text-decoration: none;
+      color: #000;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.5;
+      transition: opacity 0.15s;
+    }
+    .nav-links li a.active { opacity: 1; font-weight: 500; }
+    .nav-links li a:hover  { opacity: 0.85; }
+
+    /* ── PAGE ── */
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 60px 100px;
+    }
+    .tab-content          { display: none; }
+    .tab-content.visible  { display: block; }
+
+    /* ── TWO-COLUMN GRID ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    /* ── SECTION HEADER (Work / Research / Projects label row) ── */
+    .section-header {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 56px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      opacity: 0.35;
+      padding-top: 2px;
+    }
+    .section-gap { margin-top: 56px; }
+
+    /* ── ENTRY (experience / project rows) ── */
+    .entry {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 56px;
+      padding: 22px 0;
+      border-top: 1px solid rgba(0,0,0,0.07);
+    }
+    .entry-date {
+      font-size: 12px;
+      opacity: 0.4;
+      padding-top: 3px;
+      line-height: 1.55;
+    }
+    .entry-body h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 2px;
+      letter-spacing: -0.1px;
+    }
+    .entry-body .role {
+      font-size: 13px;
+      opacity: 0.5;
+      margin-bottom: 9px;
+      font-style: italic;
+    }
+    .entry-body p {
+      font-size: 13px;
+      opacity: 0.72;
+      line-height: 1.65;
+    }
+    .entry-body .tags {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .entry-body .tags span {
+      font-size: 11px;
+      opacity: 0.5;
+      border: 1px solid rgba(0,0,0,0.15);
+      padding: 2px 9px;
+      border-radius: 999px;
+    }
+    .entry-body .proj-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #000;
+      opacity: 0.55;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .entry-body .proj-link:hover { opacity: 1; }
   </style>
 </head>
 <body>
