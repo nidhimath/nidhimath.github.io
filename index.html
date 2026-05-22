@@ -143,6 +143,54 @@
       text-underline-offset: 3px;
     }
     .entry-body .proj-link:hover { opacity: 1; }
+
+    /* ── ABOUT ── */
+    .col-left .name-big {
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+      margin-bottom: 8px;
+    }
+    .col-left .tagline {
+      font-size: 13px;
+      opacity: 0.5;
+      line-height: 1.65;
+      margin-bottom: 22px;
+    }
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .contact-links a {
+      font-size: 13px;
+      color: #000;
+      text-decoration: none;
+      opacity: 0.55;
+    }
+    .contact-links a:hover { opacity: 1; text-decoration: underline; }
+
+    .about-text {
+      font-size: 15px;
+      line-height: 1.78;
+      opacity: 0.82;
+    }
+    .about-text p + p { margin-top: 15px; }
+
+    .skills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 28px;
+    }
+    .chip {
+      border: 1px solid rgba(0,0,0,0.18);
+      padding: 3px 11px;
+      border-radius: 999px;
+      font-size: 12px;
+      opacity: 0.65;
+    }
   </style>
 </head>
 <body>
@@ -158,7 +206,39 @@
   </nav>
 
   <div class="page">
-    <div id="tab-about"      class="tab-content visible"></div>
+    <div id="tab-about" class="tab-content visible">
+      <div class="two-col">
+
+        <div class="col-left">
+          <div class="name-big">Nidhi<br>Mathihalli</div>
+          <div class="tagline">MIT '27<br>CS &amp; Math<br>AI / ML</div>
+          <div class="contact-links">
+            <a href="mailto:nidhim27@mit.edu">nidhim27@mit.edu</a>
+            <a href="https://www.linkedin.com/in/nidhi-mathihalli/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/nidhimath" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-text">
+            <p>Hi, I'm Nidhi — a junior at MIT studying Computer Science and Mathematics, concentrating in AI and Machine Learning.</p>
+            <p>I'm interested in the intersection of machine learning and real-world systems — from building AI agents that automate complex engineering workflows to applying deep learning to medical imaging and space reconstruction.</p>
+            <p>Outside of research and internships, I'm a math competition enthusiast (USAMO qualifier), a science fair competitor (4× ISEF 1st place), and a first author at IAC '24.</p>
+          </div>
+          <div class="skills-row">
+            <span class="chip">Python</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">React.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">C / C++</span>
+            <span class="chip">Go</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Docker</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <div id="tab-experience" class="tab-content"></div>
     <div id="tab-projects"   class="tab-content"></div>
   </div>
