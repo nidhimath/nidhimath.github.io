@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nidhi Mathihalli</title>
+  <title>Nidhi Mathihalli — MIT CS &amp; Math</title>
+  <link rel="icon" href="data:,"">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
@@ -190,6 +191,34 @@
       border-radius: 999px;
       font-size: 12px;
       opacity: 0.65;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 680px) {
+      nav {
+        padding: 18px 24px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .nav-links { gap: 20px; }
+
+      .page { padding: 40px 24px 80px; }
+
+      .two-col,
+      .section-header,
+      .entry {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .entry { padding: 18px 0; }
+
+      .entry-date {
+        opacity: 0.4;
+        font-size: 11px;
+      }
+
+      .col-left .name-big { font-size: 26px; }
     }
   </style>
 </head>
