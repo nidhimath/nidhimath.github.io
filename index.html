@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nidhi Mathihalli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    /* styles go here in Task 2 */
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-name">Nidhi Mathihalli</div>
+    <ul class="nav-links">
+      <li><a href="#" class="active" data-tab="about">About</a></li>
+      <li><a href="#" data-tab="experience">Experience</a></li>
+      <li><a href="#" data-tab="projects">Projects</a></li>
+      <li><a href="#" id="cv-link">CV</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div id="tab-about"      class="tab-content visible"></div>
+    <div id="tab-experience" class="tab-content"></div>
+    <div id="tab-projects"   class="tab-content"></div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.nav-links a[data-tab]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('visible'));
+        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+        document.getElementById('tab-' + link.dataset.tab).classList.add('visible');
+        link.classList.add('active');
+      });
+    });
+
+    document.getElementById('cv-link').addEventListener('click', e => {
+      e.preventDefault();
+      window.open('Nidhi Mathihalli Resume.pdf', '_blank');
+    });
+  </script>
+</body>
+</html>
