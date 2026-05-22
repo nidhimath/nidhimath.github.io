@@ -159,6 +159,13 @@
       line-height: 1.65;
       margin-bottom: 22px;
     }
+
+    .col-left .lastupdated {
+      font-size: 13px;
+      opacity: 0.5;
+      line-height: 1.65;
+      margin-bottom: 22px;
+    }
     .contact-links {
       display: flex;
       flex-direction: column;
@@ -247,7 +254,7 @@
             <a href="https://www.linkedin.com/in/nidhi-mathihalli/" target="_blank" rel="noopener">LinkedIn ↗</a>
             <a href="https://github.com/nidhimath" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
-          <div class="updated-text">Last updated: May 2026</div>
+          <div class="lastupdated">Last updated: May 2026</div>
         </div>
 
         <div>
@@ -372,51 +379,96 @@
       </div>
 
       <div class="entry">
-        <div class="entry-date">Oct 2024<br>HackMIT</div>
+        <div class="entry-date">Jan – May 2026</div>
         <div class="entry-body">
-          <h4>Coursemate</h4>
-          <p>AI agent that personalizes course curriculum based on past class structures a student has succeeded in. Built at HackMIT to help students navigate MIT's course catalog more effectively.</p>
+          <h4>Camera Trajectory Analysis for Video Generation</h4>
+          <p>Studied why pose-conditioned video diffusion models fail under unusual camera movements. Used Depth Anything V2 to estimate metric depth from RealEstate10K scenes, back-projecting into 3D point clouds and Gaussian Splats evaluated across structured trajectory perturbations. Findings challenged the data-rarity hypothesis — model robustness tracked motion combinations, not how frequently individual camera primitives appeared in training data.</p>
+          <div class="tags">
+            <span>Video Diffusion Models</span>
+            <span>3D Gaussian Splatting</span>
+            <span>Depth Estimation</span>
+            <span>PyTorch</span>
+            <span>Computer Vision</span>
+          </div>
+          <a class="proj-link" href="https://nidhimath.github.io/camera-trajectory/" target="_blank" rel="noopener">↗ Live site</a>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Apr 2026</div>
+        <div class="entry-body">
+          <h4>NeuroAdGen: Brain-Optimised Ad Video Generation</h4>
+          <p>Generates video ads from a brief, then iteratively refines them to maximize predicted cortical fMRI responses across visual cortex, emotional valence, memory, and attention networks. Uses a neural scoring model trained on brain imaging data as a reward signal, steering a video generation pipeline toward ads optimized for neurological impact.</p>
+          <div class="tags">
+            <span>fMRI Modeling</span>
+            <span>Video Generation</span>
+            <span>Iterative Optimization</span>
+            <span>Neuroscience</span>
+            <span>Python</span>
+          </div>
+          <a class="proj-link" href="https://nidhimath.github.io/tribevidgen/" target="_blank" rel="noopener">↗ Live site</a>
+          &nbsp;
+          <a class="proj-link" href="https://github.com/nidhimath/tribevidgen" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Mar 2026<br>MIT Claude Hacks 2026</div>
+        <div class="entry-body">
+          <h4>MIT Swap: Depop for MIT</h4>
+          <p>Secondhand clothing marketplace built exclusively for the MIT community, letting students list and buy clothes directly from each other. Tackles the thousands of dollars of annual textile waste on campus through a full-stack Next.js app with real-time listings and image uploads. Built at MIT Claude Hacks 2026 under the Economic Track.</p>
+          <div class="tags">
+            <span>Next.js</span>
+            <span>React</span>
+            <span>Full-Stack</span>
+            <span>Vercel</span>
+            <span>Claude API</span>
+          </div>
+          <a class="proj-link" href="https://mitswap.vercel.app" target="_blank" rel="noopener">↗ Live site</a>
+          &nbsp;
+          <a class="proj-link" href="https://github.com/qickenwing/mitswap" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Feb 2026</div>
+        <div class="entry-body">
+          <h4>JuryMind: AI Mock Jury for Trial</h4>
+          <p>A mock jury simulator for trial attorneys. Paste a case document and receive parallel reactions from 12 AI-simulated jurors, each filtered through their own demographic background and personal worldview drawn from real population data by location and occupation. Helps attorneys stress-test arguments before trial.</p>
+          <div class="tags">
+            <span>Multi-Agent Systems</span>
+            <span>LLM</span>
+            <span>Legal Tech</span>
+            <span>React</span>
+            <span>Population Modeling</span>
+          </div>
+          <a class="proj-link" href="https://omni-rjmi8836v-nidhimaths-projects.vercel.app/new" target="_blank" rel="noopener">↗ Live site</a>
+          &nbsp;
+          <a class="proj-link" href="https://github.com/nidhimath/mirafish" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Oct 2025<br>HackMIT</div>
+        <div class="entry-body">
+          <h4>Coursemate: Personalized Learning</h4>
+          <p>AI agent that personalizes your course schedule by analyzing which class structures you've historically succeeded in and mapping those patterns to MIT's catalog. Uses NLP to parse past syllabus materials and a recommendation engine to surface best-fit options across hundreds of available courses. Built at HackMIT under the Education Track.</p>
           <div class="tags">
             <span>AI Agents</span>
-            <span>Python</span>
+            <span>NLP</span>
             <span>React.js</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">Fall 2024</div>
-        <div class="entry-body">
-          <h4>RISC-V Processor</h4>
-          <p>Designed and implemented a RISC-V processor in Minispec with cache hierarchies and parallel processing pipelines as part of MIT's Computer Architecture course.</p>
-          <div class="tags">
-            <span>Minispec</span>
-            <span>Computer Architecture</span>
-            <span>RISC-V</span>
-            <span>Cache Design</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-date">2022<br>WSCG Conference</div>
-        <div class="entry-body">
-          <h4>Currency Detector</h4>
-          <p>Transfer learning model on Raspberry Pi to predict currency denominations in INR and USD. Validated through testing with three blind schools and presented at WSCG 2022.</p>
-          <div class="tags">
-            <span>Transfer Learning</span>
-            <span>Raspberry Pi</span>
             <span>Python</span>
-            <span>TensorFlow</span>
+            <span>Personalization</span>
           </div>
+          <a class="proj-link" href="https://github.com/nidhimath/CourseMate" target="_blank" rel="noopener">↗ GitHub</a>
         </div>
       </div>
 
       <div class="entry">
-        <div class="entry-date">Fall 2025</div>
+        <div class="entry-date">Sep – Dec 2025</div>
         <div class="entry-body">
           <h4>Multi-Processor xv6 OS</h4>
-          <p>Designed a multi-processor xv6 operating system for RISC-V with virtual memory management, networking, and kernel subsystems as part of MIT's Operating Systems course.</p>
+          <p>Extended the xv6 teaching kernel to run across multiple processors in C, building virtual memory management, process scheduling, inter-process networking, and core kernel subsystems from scratch. Implemented locking primitives, a network stack, and RISC-V system calls.</p>
           <div class="tags">
             <span>C</span>
             <span>RISC-V</span>
@@ -424,6 +476,53 @@
             <span>Networking</span>
             <span>Virtual Memory</span>
           </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Jan 2025</div>
+        <div class="entry-body">
+          <h4>Pokerbot</h4>
+          <p>Poker-playing bot that uses Counterfactual Regret Minimization (CFR) and reinforcement learning to compute near-optimal strategies in a multi-agent simulated environment. Trained iteratively against a diverse pool of opponent bots and refined with mathematical optimization. Placed top 10 in MIT's 2025 Pokerbot Competition.</p>
+          <div class="tags">
+            <span>Reinforcement Learning</span>
+            <span>CFR</span>
+            <span>Game Theory</span>
+            <span>Python</span>
+            <span>Optimization</span>
+          </div>
+          <a class="proj-link" href="https://github.com/nidhimath/pokerbot1" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Sep – Dec 2024</div>
+        <div class="entry-body">
+          <h4>RISC-V Processor</h4>
+          <p>Designed and implemented a fully pipelined RISC-V processor in Minispec, featuring multi-level cache hierarchies, hazard detection, and parallel execution pipelines. Explored trade-offs between cache associativity, replacement policies, and pipeline depth.</p>
+          <div class="tags">
+            <span>Minispec</span>
+            <span>RISC-V</span>
+            <span>Computer Architecture</span>
+            <span>Cache Design</span>
+            <span>Pipelining</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">Jan 2021 – Mar 2022<br>WSCG Conference</div>
+        <div class="entry-body">
+          <h4>Currency Detector</h4>
+          <p>Real-time currency denomination detector built to help visually impaired users identify INR and USD notes. Trained a lightweight TensorFlow CNN using transfer learning and deployed it on Raspberry Pi for low-power edge inference. Field-validated at three blind schools in India and published at WSCG 2022.</p>
+          <div class="tags">
+            <span>Transfer Learning</span>
+            <span>TensorFlow</span>
+            <span>Raspberry Pi</span>
+            <span>Python</span>
+            <span>Computer Vision</span>
+          </div>
+          <a class="proj-link" href="https://github.com/nidhimath/moneyReader" target="_blank" rel="noopener">↗ GitHub</a>
         </div>
       </div>
 

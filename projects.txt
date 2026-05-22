@@ -1,0 +1,65 @@
+1. MIT Swap: Depop for MIT
+
+summary: Throughout the year, thousands of dollars go to waste in clothing. We created MIT Swap to solve this issue, by allowing MIT students to buy and sell clothes to each other. Built at MIT Claude Hacks 2026 under the economic track.
+
+date: Mar 2026
+location: MIT Claude Hacks 2026.
+live link: https://mitswap.vercel.app
+github: https://github.com/qickenwing/mitswap
+
+2. Coursemate: Personalized learning
+
+summary: AI agent that personalizes course curriculum based on past class structures a student has succeeded in. Built at HackMIT under the education track to help students navigate MIT's course catalog more effectively.
+
+date: Oct 2025
+location: HackMIT
+github: https://github.com/nidhimath/CourseMate
+
+3. Pokerbot
+
+summary: Created a pokerbot using Reinforcement Learning, Optimization, and Counterfactual Regret Minimization to compete against other pokerbots in a simulated setting. Placed top 10 in MIT 2025 Pokerbot competition.
+
+date: Jan 2025
+github: https://github.com/nidhimath/pokerbot1
+
+4. Camera Trajectory Analysis for Video Generation
+
+summary: This project investigates whether training data rarity explains geometric failures in pose-conditioned video diffusion models (DFoT) by generating 3D point clouds and Gaussian Splats from RealEstate10K bedroom scenes under out-of-distribution camera trajectories. Depth Anything V2 was used to estimate per-pixel metric depth, which was back-projected into dense point clouds and evaluated using Chamfer Distance, Hausdorff Distance, F-score, and ICP fitness across structured trajectory perturbations (oscillating roll, diagonal translation, rising spiral, extreme downward tilt). Results challenged the rarity hypothesis: reconstruction quality was non-monotonic with tilt angle, equally rare motions (roll vs. tilt) produced substantially different outcomes, and compound motions similar to training patterns (arc, crane) performed well regardless of individual  primitive frequency. The findings suggest model robustness depends more on semantic content and motion combinations than the raw frequency of individual camera primitives in training data.
+
+date: Jan - May 2026
+live link: https://nidhimath.github.io/camera-trajectory/
+
+5. JuryMind: AI Mock Jury for Trial
+
+summary: A mock jury simulator for trial attorneys. Paste your case document and get parallel reactions from 12 simulated jurors, each reading your opening through their own demographic lens and personal worldview. Each juror is an AI agent whose personality is based population dynamic data based on location, ___.
+
+date: Feb 2026
+live link: https://omni-rjmi8836v-nidhimaths-projects.vercel.app/new
+github: https://github.com/nidhimath/mirafish
+
+6. NeuroAdGen: Brain-Optimised Ad Video Generation
+
+summary: This was a project mainly used to test out TribeV2neural reward alignment. NeuroAdGen takes an advertising brief and outputs a video advertisement iteratively optimised to maximise predicted cortical fMRI responses in target brain regions — visual cortex, emotional valence areas, memory circuits, and attention networks.
+
+date: April 2026
+live link: https://nidhimath.github.io/tribevidgen/
+github: https://github.com/nidhimath/tribevidgen
+
+7. RISC-V Processor
+
+summary: Designed and implemented a RISC-V processor in Minispec with cache hierarchies and parallel processing pipelines as part of MIT's Computer Architecture course.
+
+date: Sep - Dec 2024
+
+8. Currency Detector
+
+summary: Transfer learning model on Raspberry Pi to predict currency denominations in INR and USD. Validated through testing with three blind schools and presented at WSCG 2022.
+
+date: Jan 2021 - Mar 2022
+github: https://github.com/nidhimath/moneyReader
+
+9. Multi-Processor xv6 OS
+
+summary: Designed a multi-processor xv6 operating system for RISC-V with virtual memory management, networking, and kernel subsystems as part of MIT's Operating Systems course.
+
+date: Sep - Dec 2025
